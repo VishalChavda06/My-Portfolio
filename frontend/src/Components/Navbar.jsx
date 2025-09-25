@@ -46,9 +46,9 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link to="/contact" className="text-gray-700 hover:text-gray-900 font-medium">
               Contact Me
-            </a>
+            </Link>
           </div>
 
           {/* Hire Me Button */}
@@ -94,9 +94,9 @@ const Navbar = () => {
               <a href="#" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Blog
               </a>
-              <a href="#" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
+              <Link to="/contact" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Contact Me
-              </a>
+              </Link>
               <div className="pt-2">
                 <button className="w-full bg-gray-800 text-white px-6 py-2 rounded-full font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center justify-center space-x-2">
                   <span>Hire Me</span>
