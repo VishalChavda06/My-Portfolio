@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity duration-200">
             <div className="relative">
               <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                 <div className="w-4 h-4 bg-white rounded-full"></div>
@@ -21,7 +21,7 @@ const Navbar = () => {
               <div className="absolute -top-1 -right-1 w-2 h-2 bg-black rounded-full"></div>
             </div>
             <span className="text-xl font-bold text-gray-800">My-Portfolio</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -31,21 +31,21 @@ const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </Link>
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium">
+            <Link to="/about" className="text-gray-700 hover:text-gray-900 font-medium">
               About Us
-            </a>
+            </Link>
             <Link to="/service" className="text-gray-700 hover:text-gray-900 font-medium flex items-center space-x-1">
               <span>Service</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </Link>
-            <a href="#" className="text-gray-700 hover:text-gray-900 font-medium flex items-center space-x-1">
+            <Link to="/blog" className="text-gray-700 hover:text-gray-900 font-medium flex items-center space-x-1">
               <span>Blog</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </a>
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-gray-900 font-medium">
               Contact Me
             </Link>
@@ -85,15 +85,15 @@ const Navbar = () => {
               <Link to="/" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Home
               </Link>
-              <a href="#" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
+              <Link to="/about" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 About Us
-              </a>
+              </Link>
               <Link to="/service" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Service
               </Link>
-              <a href="#" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
+              <Link to="/blog" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Blog
-              </a>
+              </Link>
               <Link to="/contact" className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium">
                 Contact Me
               </Link>

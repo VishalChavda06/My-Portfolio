@@ -1,146 +1,119 @@
 import React from 'react'
 
-const ServicePage = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Full Stack Web Development",
-      description: "I specialize in full-stack web development, building dynamic, responsive",
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
-        </svg>
-      ),
-      featured: false
-    },
-    {
-      id: 2,
-      title: "Mobile App Development (IOS & Android)",
-      description: "We create high-performance iOS and Android mobile apps with intuitive designs, seamless functionality, and cutting-edge",
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M17 1.01L7 1c-1.1 0-1.99.9-1.99 2v18c0 1.1.89 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
-        </svg>
-      ),
-      featured: true
-    },
-    {
-      id: 3,
-      title: "Web Design Development",
-      description: "I specialize in full-stack web development, building dynamic, responsive",
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-        </svg>
-      ),
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Full Stack Web Development",
-      description: "I specialize in full-stack web development, building dynamic, responsive",
-      icon: (
-        <div className="text-white font-bold text-sm">API</div>
-      ),
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Full Stack Visual Design",
-      description: "I specialize in full-stack web development, building dynamic, responsive",
-      icon: (
-        <div className="text-white text-xs font-bold">
-          <div>UX/UI</div>
-          <svg className="w-4 h-4 mt-1" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zm-10-7v6l5-3-5-3z"/>
-          </svg>
-        </div>
-      ),
-      featured: false
-    }
-  ]
-
+const BlogPage = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header Section with Gradient Background */}
-      <div className="relative bg-gradient-to-r from-green-50 via-blue-50 to-purple-50 py-20">
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Service
-          </h1>
-          
-          {/* Breadcrumbs */}
-          <div className="flex items-center justify-center space-x-2 text-gray-600 mb-8">
-            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+      {/* Hero Section with Gradient Background */}
+      <div className="relative bg-gradient-to-r from-green-100 via-white to-pink-100 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Breadcrumb Navigation */}
+          <div className="flex items-center justify-center space-x-2 mb-8">
+            <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
-            <span className="text-sm">Home</span>
+            <span className="text-gray-600">Home</span>
             <span className="text-gray-400">></span>
-            <span className="text-sm text-green-500">Service</span>
+            <span className="text-gray-600">Blog</span>
           </div>
-          
+
+          {/* Main Title */}
+          <h1 className="text-5xl lg:text-6xl font-bold text-gray-800 mb-8">
+            Blog
+          </h1>
+
           {/* Decorative Dot */}
-          <div className="w-2 h-2 bg-green-500 rounded-full mx-auto"></div>
+          <div className="w-3 h-3 bg-green-400 rounded-full mx-auto"></div>
         </div>
       </div>
 
-      {/* Services Section */}
+      {/* Main Blog Content */}
       <div className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={service.id}
-                className={`relative bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-8 ${
-                  service.featured 
-                    ? 'ring-2 ring-green-500 ring-opacity-50' 
-                    : 'border border-gray-100'
-                }`}
-              >
-                {/* Icon */}
-                <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto ${
-                  service.featured ? 'bg-green-600' : 'bg-green-500'
-                }`}>
-                  <div className="text-white">
-                    {service.icon}
-                  </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            {/* Left Column - Main Article */}
+            <div className="lg:col-span-2">
+              <article className="bg-white rounded-xl shadow-lg overflow-hidden">
+                {/* Article Image */}
+                <div className="relative h-64 bg-gray-200">
+                  <img 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                    alt="UI/UX Design Team" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
+                
+                {/* Article Content */}
+                <div className="p-8">
+                  {/* Metadata */}
+                  <div className="flex items-center space-x-4 text-sm text-gray-600 mb-4">
+                    <span className="text-green-500 font-medium">Xiomi</span>
+                    <span>•</span>
+                    <span>Comments (0)</span>
+                    <span>•</span>
+                    <span>May 1, 2025</span>
+                  </div>
+                  
+                  {/* Title */}
+                  <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4">
+                    The Importance Of User In UI/UX Design
+                  </h2>
+                  
+                  {/* Excerpt */}
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    Intuitive, efficient User-Centered Design In today's digital world, a product's success depends on how well it meets user expectations. User-Centered Design (UCD) is a design philosophy that places the user at the heart of the design process, ensuring that products are not only functional but also delightful to use.
+                  </p>
+                  
+                  {/* Read More Button */}
+                  <button className="inline-flex items-center space-x-2 border border-green-500 text-green-500 px-6 py-3 rounded-lg hover:bg-green-500 hover:text-white transition-colors duration-200">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    <span>Read More</span>
+                  </button>
+                </div>
+              </article>
+            </div>
 
-                {/* Title */}
-                <h3 className="text-lg font-bold text-gray-900 mb-4 text-center">
-                  {service.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-gray-600 text-sm leading-relaxed text-center">
-                  {service.description}
-                </p>
+            {/* Right Column - Sidebar */}
+            <div className="space-y-8">
+              
+              {/* Search Section */}
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Search Here</h3>
+                <div className="flex">
+                  <input 
+                    type="text" 
+                    placeholder="Search" 
+                    className="flex-1 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                  />
+                  <button className="bg-green-500 text-white px-4 py-3 rounded-r-lg hover:bg-green-600 transition-colors duration-200">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
 
-      {/* Call to Action Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Ready to Start Your Project?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Let's work together to bring your ideas to life with professional development services.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
-              <span>Get Started</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </button>
-            <button className="border-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white px-8 py-3 rounded-full font-medium transition-colors duration-200">
-              Learn More
-            </button>
+              {/* Categories Section */}
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Categories</h3>
+                <div className="space-y-3">
+                  <a href="#" className="block text-gray-600 hover:text-green-500 transition-colors duration-200">
+                    Mobile App Design (3)
+                  </a>
+                  <a href="#" className="block text-gray-600 hover:text-green-500 transition-colors duration-200">
+                    Web Design (1)
+                  </a>
+                  <a href="#" className="block text-gray-600 hover:text-green-500 transition-colors duration-200">
+                    UI/UX Design (1)
+                  </a>
+                  <a href="#" className="block text-gray-600 hover:text-green-500 transition-colors duration-200">
+                    Visual Design (1)
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -289,4 +262,4 @@ const ServicePage = () => {
   )
 }
 
-export default ServicePage
+export default BlogPage
